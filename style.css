@@ -1,0 +1,65 @@
+/* ------------
+Main Css
+------------ */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,400&family=Poppins:wght@500;600;700&family=Roboto:wght@500&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+/*----------- 
+animaton css 
+------------- */
+@keyframes hero-anim {
+    0% {
+        transform: translate(0px);
+    }
+    50% {
+        transform: translate(-100px) scale(1.2);
+        
+    }
+    100% {
+        transform: translate(0px);
+    }
+}
+
+/* -----------
+heder section css
+--------------  */
+.header-main{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-items: center;
+    background-color: black;
+    width: 80%;
+    justify-items: end;
+    padding: 3.313em ;
+    border-radius: 20px;
+    
+    
+
+}
+.heder-tex{
+    color: white;
+   
+}
+.heder-tex h1{
+    font-size: 3.1em;
+    font-weight: 700;
+}
+.heder-tex button{
+    background-color: #DD0000;
+    padding: 1em  1.7em;
+    color: white;
+    border-radius: 5px;
+}
+.hero {
+  animation: hero-anim 5s  infinite;
+    
+}
+
