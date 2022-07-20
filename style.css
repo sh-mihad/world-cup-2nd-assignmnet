@@ -149,6 +149,9 @@ heder section css
 .blog-item-icon{
     margin-right: 2em;
 }
+.tab-btn{
+    display: none;
+}
 /* .flag-box{
     align-items: center;
     justify-items: center
@@ -229,10 +232,6 @@ footer{
  Mobile Responsive
 --------------- */
 @media only screen and (max-width:576px) {
-    /* .header-container{
-        display: flex;
-        flex-direction: column;
-    } */
     
     .header-main,.blog-box{
         width: 100%;
@@ -261,9 +260,55 @@ footer{
  .blog-main{
     align-items: center;
  }
+ .footer-menu{
+     flex-direction: column;
+     align-items: center;
+ }   
+   
     
-    footer{
-        display: none;
+}
+
+/*-----------
+ Tab Responsive
+--------------- */
+@media only screen and (min-width:577px) and (max-width:922px) {
+   
+    .header-main,.blog-box{
+        width: 100%;
+        grid-template-columns: repeat(2,1fr);
+        padding: 30px;
+        margin: 0px;
+    }
+    .heder-tex h1{
+        font-size: 3em;
     }
     
+   .hero {
+    display: block;
+    margin: auto;
+    animation: none;
+    margin-top: 2em;
+ }
+ .blog-main{
+     flex-direction: column;
+     align-items: center;
+ }
+ .buton-box{
+     flex-direction: row;
+     row-gap: 10px;
+     background-color: #fff;
+     width: 80%;
+     justify-content: space-evenly;
+ }
+
+ .tab-btn{
+    display: block;
+    border: none;
+    color: white;
+    background-color: #DD0000;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+
 }
