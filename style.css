@@ -12,6 +12,7 @@ main{
     display: flex;
     justify-content: center;
 }
+
 .header-container{
     display: flex;
     justify-content: center;
@@ -60,10 +61,14 @@ heder section css
 .heder-tex{
     color: white;
    
+   
 }
 .heder-tex h1{
     font-size: 3.1em;
     font-weight: 700;
+}
+.heder-tex p, .blog-item-info p{
+    text-align: start;
 }
 .heder-tex button{
     background-color: #DD0000;
@@ -80,7 +85,7 @@ heder section css
 /*-------------------
  Match Blog Sectin Css
  --------------------*/
- .blog-main{
+ .blog-main,.flag-main{
     display: flex;
     justify-content: center;
     align-items: flex-start
@@ -95,7 +100,7 @@ heder section css
      border-radius: 10px;
      
  }
- .blog-box{
+ .blog-box, .flag-box{
      display: grid;
      grid-template-columns: repeat(3,1fr);
      column-gap: 1em;
@@ -144,6 +149,33 @@ heder section css
 .blog-item-icon{
     margin-right: 2em;
 }
+/* .flag-box{
+    align-items: center;
+    justify-items: center
+} */
+.flag-box-item{
+    border: 1px solid lightgrey;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.flag-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+   
+}
+.flag-item img{
+    margin: 0px 1em;
+}
+.flag-item-info h3,p{
+    text-align: center;
+}
 
 
 /*----------------
@@ -186,4 +218,52 @@ footer{
     color: whitesmoke;
     margin: 1em .5em;
     font-size: 2em;
+    
+}
+
+           /*------------------------------------------- 
+                         Responsive  Css
+              -------------------------------------  */
+
+/*-----------
+ Mobile Responsive
+--------------- */
+@media only screen and (max-width:576px) {
+    /* .header-container{
+        display: flex;
+        flex-direction: column;
+    } */
+    
+    .header-main,.blog-box{
+        width: 100%;
+        grid-template-columns: repeat(1,1fr);
+        padding: 20px;
+        margin: 0px;
+    }
+    .heder-tex, .heder-tex p{
+        text-align: center;
+    }
+    .heder-tex h1{
+        font-size: 2em;
+    }
+  
+    .hero {
+    display: block;
+    margin: auto;
+    animation: none;
+    margin-top: 2em;
+ }
+
+
+ .blog-main{
+     flex-direction: column;
+ }
+ .blog-main{
+    align-items: center;
+ }
+    
+    footer{
+        display: none;
+    }
+    
 }
