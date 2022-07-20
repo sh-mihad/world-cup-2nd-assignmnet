@@ -5,10 +5,23 @@ Main Css
 
 body{
     font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    
 }
-.container{
+main{
     display: flex;
     justify-content: center;
+}
+.header-container{
+    display: flex;
+    justify-content: center;
+}
+.sec-conntainer{
+    margin: 3em 0;
+    width: 85%;
+    /* display: flex;
+    justify-content: center; */
+
 }
 
 /*----------- 
@@ -63,3 +76,114 @@ heder section css
     
 }
 
+
+/*-------------------
+ Match Blog Sectin Css
+ --------------------*/
+ .blog-main{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start
+ }
+ .buton-box{
+     background-color: black;
+     display: flex;
+     flex-direction: column;
+     padding: 1em;
+    max-height: 200px;
+    
+     border-radius: 10px;
+     
+ }
+ .blog-box{
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     column-gap: 1em;
+     row-gap: 1em;
+     width: 80%;
+     margin-left: 2em;
+    
+     
+     
+ }
+ .button-item{
+     margin-top:0.9em;
+     background-color: white;
+     padding: 1em 1.5em;
+     border-radius: 10px;
+ }
+ .button-item:target{
+    background-color:red;
+ }
+ .button-item a{
+     text-decoration: none;
+     color: black;
+     font-weight: 500;
+ }
+
+
+.blog-item{
+    border: 1px solid lightgrey;
+}
+.blog-item img{
+    width: 100%;
+}
+.blog-item-info{
+    margin: 1em;
+
+}
+.blog-item-info button{
+    background-color:white;
+    border: 1px solid #161616;
+    padding: 0.5em 2em;
+}
+.blog-item-info p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.blog-item-icon{
+    margin-right: 2em;
+}
+
+
+/*----------------
+ Footer secton css
+ ----------------*/
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+  
+}
+.footer-containr{
+    width: 80%;
+}
+.footer-title{
+   margin-top: 50px;
+    color: whitesmoke;
+    text-align: center;
+    border-bottom:1px solid whitesmoke;
+}
+.footer-menu {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 2em 0;
+}
+.footer-menu li{
+    list-style: none;
+}
+.footer-menu a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.footer-icon{
+    display: flex;
+    justify-content: center;
+    
+}
+.footer-icon .fa-brands{
+    color: whitesmoke;
+    margin: 1em .5em;
+    font-size: 2em;
+}
