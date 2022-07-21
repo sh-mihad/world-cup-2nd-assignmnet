@@ -117,9 +117,12 @@ heder section css
      padding: 1em 1.5em;
      border-radius: 10px;
  }
- .button-item:target{
-    background-color:red;
+ .active-btn{
+    
+     background-color: #DD0000;
+     
  }
+ 
  .button-item a{
      text-decoration: none;
      color: black;
@@ -200,6 +203,7 @@ footer{
     border-bottom:1px solid whitesmoke;
 }
 .footer-menu {
+    
     display: flex;
     justify-content: center;
     justify-content: space-between;
@@ -233,7 +237,7 @@ footer{
 --------------- */
 @media only screen and (max-width:576px) {
     
-    .header-main,.blog-box{
+    .header-main,.blog-box,.flag-box{
         width: 100%;
         grid-template-columns: repeat(1,1fr);
         padding: 20px;
@@ -254,8 +258,9 @@ footer{
  }
 
 
- .blog-main{
+ .blog-main,.flag-main{
      flex-direction: column;
+     align-items: center;
  }
  .blog-main{
     align-items: center;
@@ -273,7 +278,7 @@ footer{
 --------------- */
 @media only screen and (min-width:577px) and (max-width:922px) {
    
-    .header-main,.blog-box{
+    .header-main,.blog-box,.flag-box{
         width: 100%;
         grid-template-columns: repeat(2,1fr);
         padding: 30px;
@@ -289,7 +294,7 @@ footer{
     animation: none;
     margin-top: 2em;
  }
- .blog-main{
+ .blog-main,.flag-main{
      flex-direction: column;
      align-items: center;
  }
